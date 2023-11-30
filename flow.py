@@ -2,7 +2,7 @@ from prefect import flow
 
 
 @flow(log_prints=True)
-def print_issue(issue_number: str, issue_text: str, user_login_name: str) -> None:
+def print_issue(issue_number: int, issue_text: str, user_login_name: str) -> None:
     print(f"Issue #{issue_number} from {user_login_name} reads: {issue_text}")
     print("Now go do other things with this information (summarize, respond, etc)")
 
