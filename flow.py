@@ -9,6 +9,6 @@ def print_issue(issue_number: str, issue_text: str, user_login_name: str) -> Non
 
 if __name__ == "__main__":
     print_issue.from_source(
-        source="https://github.com/discdiver/event-driven.git",
+        source="https://github.com/m-guha/event-driven.git",
         entrypoint="flow.py:print_issue",
-    ).deploy(name="gh-issue-deploy", work_pool_name="prefect-managed")
+    ).deploy(name="gh-issue-deploy", work_pool_name="dock1")
